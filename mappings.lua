@@ -8,6 +8,7 @@ return {
   n = {
     -- second key is the lefthand side of the map
     -- mappings seen under group name "Buffer"
+    ["<leader>dd"] = { "<cmd> lua vim.diagnostic.open_float() <CR>", desc = "?   toggles local troubleshoot" },
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {
       function()
